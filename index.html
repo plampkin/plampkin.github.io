@@ -39,7 +39,10 @@ layout: default
   <div id="postdoctoral" class="tab-panel active">
     <div class="position-entry">
       <div class="position-meta">
-        <p class="position">{{ site.position.title }} | {{ site.position.institution }}</p>
+        <div>
+          <p class="position">{{ site.position.title }}</p>
+          <p class="position-institution">{{ site.position.institution }}</p>
+        </div>
         {% if site.position.years != "" %}<span class="position-years">{{ site.position.years }}</span>{% endif %}
       </div>
       {% if site.position.focus != "" %}<p class="position-focus">{{ site.position.focus }}</p>{% endif %}
@@ -54,7 +57,10 @@ layout: default
     {% for pos in graduate_positions %}
     <div class="position-entry">
       <div class="position-meta">
-        <p class="position">{{ pos.title }}{% if pos.institution != "" %} | {{ pos.institution }}{% endif %}</p>
+        <div>
+          <p class="position">{{ pos.title }}</p>
+          {% if pos.institution != "" %}<p class="position-institution">{{ pos.institution }}</p>{% endif %}
+        </div>
         {% if pos.years != "" %}<span class="position-years">{{ pos.years }}</span>{% endif %}
       </div>
       {% if pos.focus != "" %}<p class="position-focus">{{ pos.focus }}</p>{% endif %}
@@ -72,7 +78,10 @@ layout: default
     {% for pos in undergrad_positions %}
     <div class="position-entry">
       <div class="position-meta">
-        <p class="position">{{ pos.title }}{% if pos.institution != "" %} | {{ pos.institution }}{% endif %}</p>
+        <div>
+          <p class="position">{{ pos.title }}</p>
+          {% if pos.institution != "" %}<p class="position-institution">{{ pos.institution }}</p>{% endif %}
+        </div>
         {% if pos.years != "" %}<span class="position-years">{{ pos.years }}</span>{% endif %}
       </div>
       {% if pos.focus != "" %}<p class="position-focus">{{ pos.focus }}</p>{% endif %}

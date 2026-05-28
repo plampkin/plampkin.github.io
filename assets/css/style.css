@@ -49,8 +49,8 @@ header {
 
 .headshot {
   flex-shrink: 0;
-  width: 96px;
-  height: 96px;
+  width: 128px;
+  height: 128px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -134,6 +134,8 @@ header {
 }
 
 .position { font-size: 1rem; color: var(--text); }
+
+.position-institution { font-size: 0.9rem; color: var(--text-muted); }
 
 .position-years {
   font-family: 'DM Mono', monospace;
