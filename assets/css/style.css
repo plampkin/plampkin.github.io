@@ -111,7 +111,7 @@ header {
 }
 
 .section-label {
-  font-family: 'DM Mono', monospace;
+  font-family: 'EB Garamond', serif;
   font-size: 0.72rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -204,6 +204,8 @@ header {
   font-size: 1rem;
   color: var(--text-muted);
   cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
   transition: color 0.15s, border-color 0.15s;
 }
 
