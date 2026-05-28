@@ -2,10 +2,13 @@
 #  Site settings — edit these to make the site yours
 # ----------------------------------------------------------------------
 title: Philip P. Lampkin
-tagline: ACS Arthur C. Cope and One-U Responsible AI Initiative Postdoctoral Fellow @ The University of Utah
-description: I'm a chemist making molecules and models to understand and design new materials.
+tagline: Chemist making molecules and models to understand and design new materials.
+description:
 url: "https://philip-lampkin.me"
 baseurl: ""
+
+# Path to your headshot (lives in /assets)
+headshot: /assets/headshot.jpg
 
 # Header links (shown as the small monospace row under your name).
 # Add, remove, or reorder freely.
@@ -18,6 +21,13 @@ links:
     url: "https://scholar.google.com/citations?user=h5jm0eEAAAAJ&hl=en"
   - label: github
     url: "https://github.com/plampkin"
+
+# Current position line
+position:
+  title: ACS Arthur C. Cope and One-U Responsible AI Initiative Postdoctoral Fellow
+  research groups: Sigman, Sparks and Lessard Labs
+  institution: University of Utah
+
 
 # Research interests (the bordered list)
 interests:
