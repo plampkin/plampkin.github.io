@@ -10,13 +10,6 @@ baseurl: ""
 # Path to your headshot (lives in /assets)
 headshot: /assets/headshot.jpg
 
-# Bio paragraph (shown below the header links)
-bio: >
-  I'm a postdoctoral scholar working at the meeting point of polymer science, physical organic
-  chemistry and AI. Previously, I developed bifunctional catalysts that mimic design elements
-  found in enzymes, built open-source tools for visible-light photochemistry, and designed 
-  organic chemistry curricula bridging the gap between research and teaching labs.
-
 # Header links (shown as the small monospace row under your name).
 # Add, remove, or reorder freely.
 links:
@@ -33,9 +26,35 @@ links:
   - label: linkedin
     url: "https://www.linkedin.com/in/philip-p-lampkin/"
 
+# Bio paragraph (shown below the header links)
+bio: >
+  I'm a chemist working at the meeting point of polymer science, physical organic chemistry
+  and data science. Previously, I developed bifunctional catalysts that mimic design elements
+  found in enzymes, built open-source tools for visible-light photochemistry, and designed 
+  organic chemistry curricula bridging the gap between research and teaching labs.
+
+# Teaching philosophy (shown in the Teaching Philosophy tab)
+#teaching_philosophy:
+#  - title: Mentorship
+#    desc: 
+#  - title: Collaboration
+#    desc: 
+#  - title: Diversity
+#    desc: Science is stronger when everyone is included and enjoys success.
+
+# Research interests (the bordered list)
+interests:
+  - title: New Polymerizations and Functional Materials
+    desc: Can we bridge the gap between biopolymers and synthetic polymers? How can we overcome the limitations of current materials to address the plastic waste crisis?
+  - title: Data Chemistry
+    desc: How do we best leverage sparse chemistry data to guide experimental efforts? What AI/ML methods are most useful for chemists and how do we make them accessible to experimentalists?
+  - title: Catalysis
+    desc: What is required to discover new catalysts that enable fundamentally new reactivity? How can we design catalysts that achieve selectivity through enhancing reactivity? What synthetic strategies haven't been examined and what catalysts might enable them?
+
+
 # Current position line
 position:
-  title: ACS Arthur C. Cope and One-U Responsible AI Initiative Postdoctoral Fellow
+  title: ACS Arthur C. Cope and One-U Responsible AI Initiative Fellow
   institution: University of Utah
   years: "2026-present"
   focus: "AI-accelerated polymer design and synthesis"
@@ -65,16 +84,6 @@ previous_positions:
     group:
       - name: "Castro/Karney Lab"
         url: "https://www.cs.usfca.edu/~karney/"
-
-
-# Research interests (the bordered list)
-interests:
-  - title: New Polymerizations and Functional Materials
-    desc: Can we bridge the gap between biopolymers and synthetic polymers? How can we overcome the limitations of current materials to address the plastic waste crisis?
-  - title: Data Chemistry
-    desc: How do we best leverage sparse chemistry data to guide experimental efforts? What AI and ML methods are most useful for chemists and how do we make them accessible to experimentalists?
-  - title: Catalysis
-    desc: What is required to discover new catalysts that enable fundamentally new reactivity? How can we design catalysts that achieve selectivity through enhancing reactivity? What synthetic strategies haven't been examined and what catalysts might enable them?
 
 # ----------------------------------------------------------------------
 #  Build settings — you usually don't need to touch these
