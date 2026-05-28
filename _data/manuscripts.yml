@@ -1,0 +1,22 @@
+# Works in progress. These are a flat list (no year grouping). The optional
+# `status` field renders as a small badge — e.g. "under review", "drafting",
+# "planning". `venue` and `links` are optional.
+
+- title: "A manuscript currently under review"
+  status: "under review"
+  venue: "Journal Name"
+  authors: "Your Name, Co-author One"
+  links:
+    - label: preprint
+      url: "#"
+    - label: github
+      url: "#"
+
+- title: "A paper currently being drafted"
+  status: "drafting"
+  venue: "Target journal TBD"
+  authors: "Your Name, Another Name"
+
+- title: "An early-stage project"
+  status: "planning"
+  authors: "Your Name"

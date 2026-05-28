@@ -1,3 +1,49 @@
-theme: jekyll-theme-minimal
+# ----------------------------------------------------------------------
+#  Site settings — edit these to make the site yours
+# ----------------------------------------------------------------------
 title: Philip Lampkin
-description: Hello world!
+tagline: Researcher · Writer · Builder
+description: Personal website of Philip Lampkin — publications, presentations, and ongoing projects.
+url: "https://philip-lampkin.me"
+baseurl: ""
+
+# Header links (shown as the small monospace row under your name).
+# Add, remove, or reorder freely.
+links:
+  - label: email
+    url: "mailto:you@example.com"
+  - label: github
+    url: "https://github.com/philip-lampkin"
+  - label: cv
+    url: "/assets/cv.pdf"
+  - label: google scholar
+    url: "#"
+
+# Current position line
+position:
+  title: Your Title
+  title_url: "#"
+  institution: Your Institution
+
+# Research interests (the bordered list)
+interests:
+  - title: First interest
+    desc: a short description of what draws you to it.
+  - title: Second interest
+    desc: another brief, honest description.
+  - title: Third interest
+    desc: and one more.
+
+# ----------------------------------------------------------------------
+#  Build settings — you usually don't need to touch these
+# ----------------------------------------------------------------------
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+# Don't copy these into the built site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

@@ -1,0 +1,33 @@
+# Each entry becomes one publication. They're grouped by `year` automatically,
+# newest year first. Add a new paper by copying a block and editing it.
+# `links` is optional; each link needs a `label` and a `url`.
+
+- year: 2024
+  title: "Title of your most recent publication"
+  venue: "Journal Name 12(3): 100–115 (2024)"
+  authors: "Your Name, Co-author One, Co-author Two"
+  links:
+    - label: article
+      url: "#"
+    - label: preprint
+      url: "#"
+    - label: github
+      url: "#"
+
+- year: 2024
+  title: "Another publication title goes here"
+  venue: "Another Journal 8(1): 22–40 (2024)"
+  authors: "Co-author One, Your Name, Co-author Three"
+  links:
+    - label: article
+      url: "#"
+
+- year: 2022
+  title: "An earlier publication from a previous year"
+  venue: "Some Journal 5(2): 88–104 (2022)"
+  authors: "Your Name, Collaborator Name"
+  links:
+    - label: article
+      url: "#"
+    - label: preprint
+      url: "#"

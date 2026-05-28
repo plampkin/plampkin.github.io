@@ -1,0 +1,228 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --text: #1a1a18;
+  --text-muted: #5c5c58;
+  --text-faint: #8a8a84;
+  --bg: #f7f6f2;
+  --border: rgba(0, 0, 0, 0.12);
+  --accent: #2a5c45;
+  --accent-light: #e8f0eb;
+  --link: #2a5c45;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e8e6de;
+    --text-muted: #a8a69e;
+    --text-faint: #6e6c65;
+    --bg: #18180f;
+    --border: rgba(255, 255, 255, 0.1);
+    --accent: #6aab88;
+    --accent-light: #1a2e22;
+    --link: #6aab88;
+  }
+}
+
+html { font-size: 17px; }
+
+body {
+  font-family: 'EB Garamond', Georgia, serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+}
+
+header { margin-bottom: 2.5rem; }
+
+.name {
+  font-size: 2.1rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 1.25rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  list-style: none;
+  font-size: 0.88rem;
+  font-family: 'DM Mono', monospace;
+}
+
+.links a,
+.position a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
+}
+
+.links a:hover,
+.position a:hover { border-bottom-color: var(--link); }
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+.bio {
+  font-size: 1.02rem;
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+.section-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 0.6rem;
+}
+
+.position-block { margin-bottom: 2rem; }
+
+.position { font-size: 1rem; color: var(--text); }
+
+.interests { margin-bottom: 2rem; }
+
+.interest-item {
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.97rem;
+}
+
+.interest-item:last-child { border-bottom: 1px solid var(--border); }
+
+.interest-title { font-weight: 500; color: var(--text); }
+
+.interest-desc {
+  color: var(--text-muted);
+  font-size: 0.93rem;
+  font-style: italic;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: 0.5rem 0;
+  margin-right: 1.75rem;
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.tab-btn:hover { color: var(--text); }
+
+.tab-btn.active {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+}
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+.pub-year {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--text-faint);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-entry {
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.pub-title {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.45;
+  margin-bottom: 0.2rem;
+}
+
+.pub-venue {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+
+.pub-authors {
+  font-size: 0.85rem;
+  color: var(--text-faint);
+  margin-bottom: 0.35rem;
+}
+
+.pub-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.pub-link {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
+}
+
+.pub-link:hover { border-bottom-color: var(--link); }
+
+.status-badge {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  background: var(--accent-light);
+  color: var(--accent);
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--text-faint);
+}
+
+@media (max-width: 600px) {
+  .page { padding: 2.5rem 1.25rem 4rem; }
+  .name { font-size: 1.7rem; }
+}

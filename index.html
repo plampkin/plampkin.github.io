@@ -1,0 +1,100 @@
+---
+layout: default
+---
+
+<header>
+  <h1 class="name">{{ site.title }}</h1>
+  <p class="tagline">{{ site.tagline }}</p>
+  <ul class="links">
+    {% for link in site.links %}
+    <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+    {% endfor %}
+  </ul>
+</header>
+
+<hr class="divider">
+
+<!-- Edit your intro paragraph right here -->
+<p class="bio">
+  A brief introduction goes here — a sentence or two describing who you are and
+  what this site collects. Keep it unpretentious. Visitors will read it.
+</p>
+
+<div class="position-block">
+  <p class="section-label">Current position</p>
+  <p class="position"><a href="{{ site.position.title_url }}">{{ site.position.title }}</a> | {{ site.position.institution }}</p>
+</div>
+
+<div class="interests">
+  <p class="section-label">Research interests</p>
+  {% for item in site.interests %}
+  <div class="interest-item">
+    <span class="interest-title">{{ item.title }} — </span>
+    <span class="interest-desc">{{ item.desc }}</span>
+  </div>
+  {% endfor %}
+</div>
+
+<hr class="divider">
+
+<div class="tabs" role="tablist">
+  <button class="tab-btn active" role="tab" aria-selected="true" onclick="switchTab('publications', this)">Publications</button>
+  <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('presentations', this)">Presentations</button>
+  <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('manuscripts', this)">Manuscripts</button>
+</div>
+
+<!-- Publications: grouped by year, newest first -->
+<div id="publications" class="tab-panel active">
+  {% assign pub_years = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+  {% for group in pub_years %}
+  <p class="pub-year">{{ group.name }}</p>
+  {% for pub in group.items %}
+  <div class="pub-entry">
+    <p class="pub-title">{{ pub.title }}</p>
+    {% if pub.venue %}<p class="pub-venue">{{ pub.venue }}</p>{% endif %}
+    <p class="pub-authors">{{ pub.authors }}</p>
+    {% if pub.links %}
+    <div class="pub-links">
+      {% for l in pub.links %}<a class="pub-link" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+  {% endfor %}
+</div>
+
+<!-- Presentations: grouped by year, newest first -->
+<div id="presentations" class="tab-panel">
+  {% assign talk_years = site.data.presentations | group_by: "year" | sort: "name" | reverse %}
+  {% for group in talk_years %}
+  <p class="pub-year">{{ group.name }}</p>
+  {% for talk in group.items %}
+  <div class="pub-entry">
+    <p class="pub-title">{{ talk.title }}</p>
+    {% if talk.venue %}<p class="pub-venue">{{ talk.venue }}</p>{% endif %}
+    <p class="pub-authors">{{ talk.authors }}</p>
+    {% if talk.links %}
+    <div class="pub-links">
+      {% for l in talk.links %}<a class="pub-link" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+  {% endfor %}
+</div>
+
+<!-- Manuscripts: a flat list with status badges -->
+<div id="manuscripts" class="tab-panel">
+  {% for m in site.data.manuscripts %}
+  <div class="pub-entry">
+    <p class="pub-title">{{ m.title }}{% if m.status %} <span class="status-badge">{{ m.status }}</span>{% endif %}</p>
+    {% if m.venue %}<p class="pub-venue">{{ m.venue }}</p>{% endif %}
+    <p class="pub-authors">{{ m.authors }}</p>
+    {% if m.links %}
+    <div class="pub-links">
+      {% for l in m.links %}<a class="pub-link" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,20 @@
+# Talks and presentations, grouped by year (newest first), same shape as
+# publications. `links` is optional.
+
+- year: 2024
+  title: "Talk title or presentation name"
+  venue: "Conference Name, City, State."
+  authors: "Your Name"
+  links:
+    - label: slides
+      url: "#"
+    - label: github
+      url: "#"
+
+- year: 2024
+  title: "Another talk or lecture title"
+  venue: "Invited lecture, Institution Name, City, ST."
+  authors: "Your Name, Co-presenter"
+  links:
+    - label: slides
+      url: "#"

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% seo %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="page">
+
+    {{ content }}
+
+    <footer>
+      built with jekyll · last updated {{ site.time | date: "%B %Y" }}
+    </footer>
+
+  </div>
+
+  <script>
+    function switchTab(id, btn) {
+      document.querySelectorAll('.tab-panel').forEach(function (p) { p.classList.remove('active'); });
+      document.querySelectorAll('.tab-btn').forEach(function (b) {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      document.getElementById(id).classList.add('active');
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+    }
+  </script>
+</body>
+</html>
