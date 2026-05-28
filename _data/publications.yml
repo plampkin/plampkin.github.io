@@ -1,33 +1,53 @@
-# Each entry becomes one publication. They're grouped by `year` automatically,
-# newest year first. Add a new paper by copying a block and editing it.
-# `links` is optional; each link needs a `label` and a `url`.
+# Published work, grouped by year (newest first). Your name is wrapped in
+# <strong> so it stands out in each author list. Add a new paper by copying
+# a block and editing the fields.
 
-- year: 2024
-  title: "Title of your most recent publication"
-  venue: "Journal Name 12(3): 100–115 (2024)"
-  authors: "Your Name, Co-author One, Co-author Two"
+- year: 2025
+  title: "Dual Activation Modes Enable Bifunctional Catalysis of Aldol Reactions by Flexible Dihydrazides"
+  venue: "Journal of the American Chemical Society 147(4): 3731–3739 (2025)"
+  authors: "<strong>P. P. Lampkin</strong>, S. H. Gellman"
   links:
     - label: article
-      url: "#"
-    - label: preprint
-      url: "#"
+      url: "https://doi.org/10.1021/jacs.4c16143"
+
+- year: 2024
+  title: "Energy-Transfer Photocatalytic (E)→(Z) Isomerization of 2-Nitrocinnamaldehyde Using an Inexpensive, 3-D Printed Photoreactor Monitored by ¹H NMR Spectroscopy and Computational Modeling"
+  venue: "Journal of Chemical Education 101(9): 3949–3957 (2024) · ACS Editors’ Choice"
+  authors: "<strong>P. P. Lampkin</strong>, A. Xu, B. J. Esselman, C. E. Schwarz, S. D. Thompson, S. H. Gellman, N. J. Hill"
+  links:
+    - label: article
+      url: "https://doi.org/10.1021/acs.jchemed.4c00620"
+
+- year: 2023
+  title: "Radiometallation and Photo-Triggered Release of Ready-to-Inject Radiopharmaceuticals from the Solid Phase"
+  venue: "Chemical Science 14: 5038–5055 (2023)"
+  authors: "D. Śmiłowicz, S. Eisenberg, S. H. Ahn, A. J. Koller, <strong>P. P. Lampkin</strong>, E. Boros"
+  links:
+    - label: article
+      url: "https://doi.org/10.1039/D2SC06977F"
+
+- year: 2021
+  title: "Versatile Open-Source Photoreactor Architecture for Photocatalysis Across the Visible Spectrum"
+  venue: "Organic Letters 23(13): 5277–5281 (2021)"
+  authors: "<strong>P. P. Lampkin</strong>, B. J. Thompson, S. H. Gellman"
+  links:
+    - label: article
+      url: "https://doi.org/10.1021/acs.orglett.1c01910"
     - label: github
-      url: "#"
+      url: "https://github.com/uw-madison-chem-shops/wisconsin-photoreactor/"
 
-- year: 2024
-  title: "Another publication title goes here"
-  venue: "Another Journal 8(1): 22–40 (2024)"
-  authors: "Co-author One, Your Name, Co-author Three"
+- year: 2020
+  title: "Catalytic Intramolecular Conjugate Additions of Aldehyde-Derived Enamines to α,β-Unsaturated Esters"
+  venue: "Organic Letters 22(11): 4568–4573 (2020)"
+  authors: "Z. C. Girvin, <strong>P. P. Lampkin</strong>, X. Liu, S. H. Gellman"
   links:
     - label: article
-      url: "#"
+      url: "https://doi.org/10.1021/acs.orglett.0c01666"
 
-- year: 2022
-  title: "An earlier publication from a previous year"
-  venue: "Some Journal 5(2): 88–104 (2022)"
-  authors: "Your Name, Collaborator Name"
+- year: 2019
+  title: "Tunneling by 16 Carbons: Planar Bond Shifting in [16]Annulene"
+  venue: "Journal of the American Chemical Society 141(13): 5286–5293 (2019)"
+  authors: "C. S. Michel, <strong>P. P. Lampkin</strong>, J. Z. Shezaf, C. Castro, W. L. Karney"
   links:
     - label: article
-      url: "#"
-    - label: preprint
-      url: "#"
+      url: "https://doi.org/10.1021/jacs.8b13131"
