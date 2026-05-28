@@ -4,25 +4,20 @@ layout: default
 
 <header>
   <img src="{{ '/assets/headshot.jpg' | relative_url }}" alt="{{ site.title }}" class="headshot">
-  <h1 class="name">{{ site.title }}</h1>
-  <p class="tagline">{{ site.tagline }}</p>
-  <ul class="links">
-    {% for link in site.links %}
-    <li><a href="{{ link.url }}">{{ link.label }}</a></li>
-    {% endfor %}
-  </ul>
+  <div class="header-text">
+    <h1 class="name">{{ site.title }}</h1>
+    <p class="tagline">{{ site.tagline }}</p>
+    <ul class="links">
+      {% for link in site.links %}
+      <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
 </header>
 
 <hr class="divider">
 
-<!-- Edit your intro paragraph right here -->
-<p class="bio">
-  I'm a chemist working at the meeting point of catalysis and physical organic
-  chemistry. I design bifunctional catalysts, build open-source tools for
-  visible-light photochemistry, and lean on mechanism and computation to
-  understand why reactions behave the way they do. This site collects my
-  published work, ongoing projects, and the software I help maintain.
-</p>
+<p class="bio">{{ site.bio }}</p>
 
 <div class="interests">
   <p class="section-label">Research interests</p>
@@ -34,75 +29,103 @@ layout: default
   {% endfor %}
 </div>
 
-<div class="position-block">
-  <p class="section-label">Current position</p>
-  <div class="position-entry">
-    <p class="position">{{ site.position.title }} | {{ site.position.institution }}</p>
-    {% if site.position.focus != "" %}<p class="position-focus">{{ site.position.focus }}</p>{% endif %}
-    <p class="groups">
-      {% for group in site.position.groups %}{% unless forloop.first %} · {% endunless %}{% if group.url != "" %}<a href="{{ group.url }}">{{ group.name }}</a>{% else %}{{ group.name }}{% endif %}{% endfor %}
-    </p>
+<div class="tabs-group" style="margin-bottom: 2rem;">
+  <div class="tabs" role="tablist">
+    <button class="tab-btn active" role="tab" aria-selected="true" onclick="switchTab('postdoctoral', this)">Postdoctoral</button>
+    <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('graduate', this)">Graduate</button>
+    <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('undergraduate', this)">Undergraduate</button>
   </div>
-</div>
 
-{% if site.previous_positions %}
-<div class="position-block">
-  <p class="section-label">Previous positions</p>
-  {% for pos in site.previous_positions %}
-  <div class="position-entry">
-    <div class="position-meta">
-      <p class="position">{{ pos.title }}{% if pos.institution != "" %} | {{ pos.institution }}{% endif %}</p>
-      {% if pos.years != "" %}<span class="position-years">{{ pos.years }}</span>{% endif %}
+  <div id="postdoctoral" class="tab-panel active">
+    <div class="position-entry">
+      <div class="position-meta">
+        <p class="position">{{ site.position.title }} | {{ site.position.institution }}</p>
+        {% if site.position.years != "" %}<span class="position-years">{{ site.position.years }}</span>{% endif %}
+      </div>
+      {% if site.position.focus != "" %}<p class="position-focus">{{ site.position.focus }}</p>{% endif %}
+      <p class="groups">
+        {% for group in site.position.groups %}{% unless forloop.first %} · {% endunless %}{% if group.url != "" %}<a href="{{ group.url }}">{{ group.name }}</a>{% else %}{{ group.name }}{% endif %}{% endfor %}
+      </p>
     </div>
-    {% if pos.focus != "" %}<p class="position-focus">{{ pos.focus }}</p>{% endif %}
-    {% if pos.groups %}
-    <p class="groups">
-      {% for group in pos.groups %}{% if group.name != "" %}{% unless forloop.first %} · {% endunless %}{% if group.url != "" %}<a href="{{ group.url }}">{{ group.name }}</a>{% else %}{{ group.name }}{% endif %}{% endif %}{% endfor %}
-    </p>
-    {% endif %}
   </div>
-  {% endfor %}
+
+  {% assign graduate_positions = site.previous_positions | where: "category", "graduate" %}
+  <div id="graduate" class="tab-panel">
+    {% for pos in graduate_positions %}
+    <div class="position-entry">
+      <div class="position-meta">
+        <p class="position">{{ pos.title }}{% if pos.institution != "" %} | {{ pos.institution }}{% endif %}</p>
+        {% if pos.years != "" %}<span class="position-years">{{ pos.years }}</span>{% endif %}
+      </div>
+      {% if pos.focus != "" %}<p class="position-focus">{{ pos.focus }}</p>{% endif %}
+      {% if pos.group %}
+      <p class="groups">
+        {% for group in pos.group %}{% if group.name != "" %}{% unless forloop.first %} · {% endunless %}{% if group.url != "" %}<a href="{{ group.url }}">{{ group.name }}</a>{% else %}{{ group.name }}{% endif %}{% endif %}{% endfor %}
+      </p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+  {% assign undergrad_positions = site.previous_positions | where: "category", "undergraduate" %}
+  <div id="undergraduate" class="tab-panel">
+    {% for pos in undergrad_positions %}
+    <div class="position-entry">
+      <div class="position-meta">
+        <p class="position">{{ pos.title }}{% if pos.institution != "" %} | {{ pos.institution }}{% endif %}</p>
+        {% if pos.years != "" %}<span class="position-years">{{ pos.years }}</span>{% endif %}
+      </div>
+      {% if pos.focus != "" %}<p class="position-focus">{{ pos.focus }}</p>{% endif %}
+      {% if pos.group %}
+      <p class="groups">
+        {% for group in pos.group %}{% if group.name != "" %}{% unless forloop.first %} · {% endunless %}{% if group.url != "" %}<a href="{{ group.url }}">{{ group.name }}</a>{% else %}{{ group.name }}{% endif %}{% endif %}{% endfor %}
+      </p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
 </div>
-{% endif %}
 
 <hr class="divider">
 
-<div class="tabs" role="tablist">
-  <button class="tab-btn active" role="tab" aria-selected="true" onclick="switchTab('publications', this)">Publications</button>
-  <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('open-source', this)">Open-Source Projects</button>
-</div>
-
-<!-- Publications: grouped by year, newest first -->
-<div id="publications" class="tab-panel active">
-  {% assign pub_years = site.data.publications | group_by: "year" | sort: "name" | reverse %}
-  {% for group in pub_years %}
-  <p class="pub-year">{{ group.name }}</p>
-  {% for pub in group.items %}
-  <div class="pub-entry">
-    <p class="pub-title">{{ pub.title }}</p>
-    {% if pub.venue %}<p class="pub-venue">{{ pub.venue }}</p>{% endif %}
-    <p class="pub-authors">{{ pub.authors }}</p>
-    {% if pub.links %}
-    <div class="pub-links">
-      {% for l in pub.links %}<a class="pub-link" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
-    </div>
-    {% endif %}
+<div class="tabs-group">
+  <div class="tabs" role="tablist">
+    <button class="tab-btn active" role="tab" aria-selected="true" onclick="switchTab('publications', this)">Publications</button>
+    <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('open-source', this)">Open-Source Projects</button>
   </div>
-  {% endfor %}
-  {% endfor %}
-</div>
 
-<!-- Open-Source Projects: flat list -->
-<div id="open-source" class="tab-panel">
-  {% for project in site.data.projects %}
-  <div class="pub-entry">
-    <p class="pub-title">{{ project.title }}</p>
-    {% if project.desc %}<p class="pub-venue">{{ project.desc }}</p>{% endif %}
-    {% if project.links %}
-    <div class="pub-links">
-      {% for l in project.links %}<a class="pub-link" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+  <!-- Publications: grouped by year, newest first -->
+  <div id="publications" class="tab-panel active">
+    {% assign pub_years = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+    {% for group in pub_years %}
+    <p class="pub-year">{{ group.name }}</p>
+    {% for pub in group.items %}
+    <div class="pub-entry">
+      <p class="pub-title">{{ pub.title }}</p>
+      {% if pub.venue %}<p class="pub-venue">{{ pub.venue }}</p>{% endif %}
+      <p class="pub-authors">{{ pub.authors }}</p>
+      {% if pub.links %}
+      <div class="pub-links">
+        {% for l in pub.links %}<a class="pub-link" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+      </div>
+      {% endif %}
     </div>
-    {% endif %}
+    {% endfor %}
+    {% endfor %}
   </div>
-  {% endfor %}
+
+  <!-- Open-Source Projects: flat list -->
+  <div id="open-source" class="tab-panel">
+    {% for project in site.data.projects %}
+    <div class="pub-entry">
+      <p class="pub-title">{{ project.title }}</p>
+      {% if project.desc %}<p class="pub-venue">{{ project.desc }}</p>{% endif %}
+      {% if project.links %}
+      <div class="pub-links">
+        {% for l in project.links %}<a class="pub-link" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
 </div>

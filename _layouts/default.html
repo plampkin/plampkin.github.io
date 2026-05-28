@@ -21,8 +21,9 @@
 
   <script>
     function switchTab(id, btn) {
-      document.querySelectorAll('.tab-panel').forEach(function (p) { p.classList.remove('active'); });
-      document.querySelectorAll('.tab-btn').forEach(function (b) {
+      var group = btn.closest('.tabs-group');
+      group.querySelectorAll('.tab-panel').forEach(function (p) { p.classList.remove('active'); });
+      group.querySelectorAll('.tab-btn').forEach(function (b) {
         b.classList.remove('active');
         b.setAttribute('aria-selected', 'false');
       });

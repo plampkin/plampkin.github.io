@@ -40,15 +40,24 @@ body {
   padding: 4rem 2rem 6rem;
 }
 
-header { margin-bottom: 2.5rem; }
+header {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  margin-bottom: 2.5rem;
+}
 
 .headshot {
-  display: block;
+  flex-shrink: 0;
   width: 96px;
   height: 96px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1.25rem;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .name {
