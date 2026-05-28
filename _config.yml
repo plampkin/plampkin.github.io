@@ -74,7 +74,7 @@ interests:
   - title: Data Chemistry
     desc: How do we best leverage sparse chemistry data to guide experimental efforts? What AI and ML methods are most useful for chemists and how do we make them accessible to experimentalists?
   - title: Catalysis
-    desc: What is required to discover new catalysts that enable fundamentally new reactivity? How can we design catalysts that achieve selectivity through enhancing reactivity?
+    desc: What is required to discover new catalysts that enable fundamentally new reactivity? How can we design catalysts that achieve selectivity through enhancing reactivity? What synthetic strategies haven't been examined and what catalysts might enable them?
 
 # ----------------------------------------------------------------------
 #  Build settings — you usually don't need to touch these
