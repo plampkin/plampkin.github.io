@@ -1,6 +1,6 @@
 # Open-source software & hardware. Each entry: title, desc, optional links.
 
-- title: "Wisconsin Photoreactor Platform (WPP)"
+- title: "Wisconsin Photoreactor Platform"
   desc: "An open-source architecture for low-cost, high-performance photoreactors for synthetic organic chemistry — a 3D-printed enclosure, an inexpensive LED light source, off-the-shelf electronics, and a custom circuit board. Dimensions and features are easily varied, and labs across academia, industry, and teaching use it worldwide."
   links:
     - label: github

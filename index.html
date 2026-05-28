@@ -42,8 +42,7 @@ layout: default
 
 <div class="tabs" role="tablist">
   <button class="tab-btn active" role="tab" aria-selected="true" onclick="switchTab('publications', this)">Publications</button>
-  <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('presentations', this)">Presentations</button>
-  <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('manuscripts', this)">Manuscripts</button>
+  <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('open-source', this)">Open-Source Projects</button>
 </div>
 
 <!-- Publications: grouped by year, newest first -->
@@ -66,36 +65,15 @@ layout: default
   {% endfor %}
 </div>
 
-<!-- Presentations: grouped by year, newest first -->
-<div id="presentations" class="tab-panel">
-  {% assign talk_years = site.data.presentations | group_by: "year" | sort: "name" | reverse %}
-  {% for group in talk_years %}
-  <p class="pub-year">{{ group.name }}</p>
-  {% for talk in group.items %}
+<!-- Open-Source Projects: flat list -->
+<div id="open-source" class="tab-panel">
+  {% for project in site.data.projects %}
   <div class="pub-entry">
-    <p class="pub-title">{{ talk.title }}</p>
-    {% if talk.venue %}<p class="pub-venue">{{ talk.venue }}</p>{% endif %}
-    <p class="pub-authors">{{ talk.authors }}</p>
-    {% if talk.links %}
+    <p class="pub-title">{{ project.title }}</p>
+    {% if project.desc %}<p class="pub-venue">{{ project.desc }}</p>{% endif %}
+    {% if project.links %}
     <div class="pub-links">
-      {% for l in talk.links %}<a class="pub-link" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
-    </div>
-    {% endif %}
-  </div>
-  {% endfor %}
-  {% endfor %}
-</div>
-
-<!-- Manuscripts: a flat list with status badges -->
-<div id="manuscripts" class="tab-panel">
-  {% for m in site.data.manuscripts %}
-  <div class="pub-entry">
-    <p class="pub-title">{{ m.title }}{% if m.status %} <span class="status-badge">{{ m.status }}</span>{% endif %}</p>
-    {% if m.venue %}<p class="pub-venue">{{ m.venue }}</p>{% endif %}
-    <p class="pub-authors">{{ m.authors }}</p>
-    {% if m.links %}
-    <div class="pub-links">
-      {% for l in m.links %}<a class="pub-link" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+      {% for l in project.links %}<a class="pub-link" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
     </div>
     {% endif %}
   </div>

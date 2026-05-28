@@ -3,6 +3,14 @@
 # a block and editing the fields.
 
 - year: 2025
+  title: "Bifunctional Catalysis of Aldol Reactions by Foldamer Dihydrazides: Assessment of Conformational Preorganization"
+  venue: "Journal of the American Chemical Society 147(37): 33932-33943 (2025)"
+  authors: "<strong>P. P. Lampkin</strong>, K. M. Sanders, L. C. Garman, S. A. Guzei, S. H. Gellman"
+  links:
+    - label: article
+      url: "https://doi.org/10.1021/jacs.4c16143"
+
+- year: 2025
   title: "Dual Activation Modes Enable Bifunctional Catalysis of Aldol Reactions by Flexible Dihydrazides"
   venue: "Journal of the American Chemical Society 147(4): 3731–3739 (2025)"
   authors: "<strong>P. P. Lampkin</strong>, S. H. Gellman"
