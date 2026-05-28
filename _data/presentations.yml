@@ -1,0 +1,10 @@
+# Presentations data
+# Each entry: year, title, venue, authors, links (optional)
+# Example:
+# - year: "2025"
+#   title: "Talk Title"
+#   venue: "Conference Name, City"
+#   authors: "P. P. Lampkin"
+#   links:
+#     - label: slides
+#       url: /assets/slides/talk.pdf
