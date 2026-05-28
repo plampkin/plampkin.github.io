@@ -11,6 +11,7 @@
   --link: #2a5c45;
 }
 
+/* Night view disabled — values preserved for future use
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #e8e6de;
@@ -23,6 +24,7 @@
     --link: #6aab88;
   }
 }
+*/
 
 html { font-size: 17px; }
 

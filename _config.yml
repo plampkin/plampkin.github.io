@@ -70,9 +70,9 @@ previous_positions:
 # Research interests (the bordered list)
 interests:
   - title: New Polymerizations and Functional Materials
-    desc: Can we bridge the gap between biopolymers and synthetic polymers? How might we overcome the limitations of current materials to address the plastic waste crisis?
+    desc: Can we bridge the gap between biopolymers and synthetic polymers? How can we overcome the limitations of current materials to address the plastic waste crisis?
   - title: Data Chemistry
-    desc: How best do we efficiently leverage sparse chemistry data to guide experimental efforts? What AI and ML methods are most useful for chemists and how do we make them accessible to experimentalists?
+    desc: How do we best leverage sparse chemistry data to guide experimental efforts? What AI and ML methods are most useful for chemists and how do we make them accessible to experimentalists?
   - title: Catalysis
     desc: What is required to discover new catalysts that enable fundamentally new reactivity? How can we design catalysts that achieve selectivity through enhancing reactivity?
 
