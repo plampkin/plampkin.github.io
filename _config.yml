@@ -15,7 +15,7 @@ bio: >
   I'm a postdoctoral scholar working at the meeting point of polymer science, physical organic
   chemistry and AI. Previously, I developed bifunctional catalysts that mimic design elements
   found in enzymes, built open-source tools for visible-light photochemistry, and designed 
-  organic chemistry lab curricula bridging the gap between research and teaching labs.
+  organic chemistry curricula bridging the gap between research and teaching labs.
 
 # Header links (shown as the small monospace row under your name).
 # Add, remove, or reorder freely.
@@ -35,7 +35,7 @@ links:
 
 # Current position line
 position:
-  title: Arthur C. Cope and One-U Responsible AI Initiative Postdoctoral Fellow
+  title: ACS Arthur C. Cope and One-U RAI Postdoctoral Fellow
   institution: University of Utah
   years: "2026-present"
   focus: "AI-accelerated polymer design and synthesis"
