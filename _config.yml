@@ -1,9 +1,9 @@
 # ----------------------------------------------------------------------
 #  Site settings — edit these to make the site yours
 # ----------------------------------------------------------------------
-title: Philip Lampkin
-tagline: Researcher · Writer · Builder
-description: Personal website of Philip Lampkin — publications, presentations, and ongoing projects.
+title: Philip P. Lampkin
+tagline: ACS Arthur C. Cope and One-U Responsible AI Initiative Postdoctoral Fellow @ The University of Utah
+description: I'm a chemist making molecules and models to understand and design new materials.
 url: "https://philip-lampkin.me"
 baseurl: ""
 
@@ -11,28 +11,22 @@ baseurl: ""
 # Add, remove, or reorder freely.
 links:
   - label: email
-    url: "mailto:you@example.com"
-  - label: github
-    url: "https://github.com/philip-lampkin"
+    url: "mailto:philip.lampkin@utah.edu"
   - label: cv
     url: "/assets/cv.pdf"
   - label: google scholar
-    url: "#"
-
-# Current position line
-position:
-  title: Your Title
-  title_url: "#"
-  institution: Your Institution
+    url: "https://scholar.google.com/citations?user=h5jm0eEAAAAJ&hl=en"
+  - label: github
+    url: "https://github.com/plampkin"
 
 # Research interests (the bordered list)
 interests:
-  - title: First interest
-    desc: a short description of what draws you to it.
-  - title: Second interest
-    desc: another brief, honest description.
-  - title: Third interest
-    desc: and one more.
+  - title: New Polymerizations and Functional Materials
+    desc: Placeholder.
+  - title: Data Chemistry
+    desc: Placeholder.
+  - title: Catalysis
+    desc: Placeholder.
 
 # ----------------------------------------------------------------------
 #  Build settings — you usually don't need to touch these
