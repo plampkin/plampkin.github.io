@@ -3,6 +3,7 @@ layout: default
 ---
 
 <header>
+  <img src="{{ '/assets/headshot.jpg' | relative_url }}" alt="{{ site.title }}" class="headshot">
   <h1 class="name">{{ site.title }}</h1>
   <p class="tagline">{{ site.tagline }}</p>
   <ul class="links">
@@ -23,11 +24,6 @@ layout: default
   published work, ongoing projects, and the software I help maintain.
 </p>
 
-<div class="position-block">
-  <p class="section-label">Current position</p>
-  <p class="position"><a href="{{ site.position.title_url }}">{{ site.position.title }}</a> | {{ site.position.institution }}</p>
-</div>
-
 <div class="interests">
   <p class="section-label">Research interests</p>
   {% for item in site.interests %}
@@ -37,6 +33,37 @@ layout: default
   </div>
   {% endfor %}
 </div>
+
+<div class="position-block">
+  <p class="section-label">Current position</p>
+  <div class="position-entry">
+    <p class="position">{{ site.position.title }} | {{ site.position.institution }}</p>
+    {% if site.position.focus != "" %}<p class="position-focus">{{ site.position.focus }}</p>{% endif %}
+    <p class="groups">
+      {% for group in site.position.groups %}{% unless forloop.first %} · {% endunless %}{% if group.url != "" %}<a href="{{ group.url }}">{{ group.name }}</a>{% else %}{{ group.name }}{% endif %}{% endfor %}
+    </p>
+  </div>
+</div>
+
+{% if site.previous_positions %}
+<div class="position-block">
+  <p class="section-label">Previous positions</p>
+  {% for pos in site.previous_positions %}
+  <div class="position-entry">
+    <div class="position-meta">
+      <p class="position">{{ pos.title }}{% if pos.institution != "" %} | {{ pos.institution }}{% endif %}</p>
+      {% if pos.years != "" %}<span class="position-years">{{ pos.years }}</span>{% endif %}
+    </div>
+    {% if pos.focus != "" %}<p class="position-focus">{{ pos.focus }}</p>{% endif %}
+    {% if pos.groups %}
+    <p class="groups">
+      {% for group in pos.groups %}{% if group.name != "" %}{% unless forloop.first %} · {% endunless %}{% if group.url != "" %}<a href="{{ group.url }}">{{ group.name }}</a>{% else %}{{ group.name }}{% endif %}{% endif %}{% endfor %}
+    </p>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
 
 <hr class="divider">
 

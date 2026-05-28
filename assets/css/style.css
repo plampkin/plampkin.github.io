@@ -42,6 +42,15 @@ body {
 
 header { margin-bottom: 2.5rem; }
 
+.headshot {
+  display: block;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.25rem;
+}
+
 .name {
   font-size: 2.1rem;
   font-weight: 500;
@@ -101,7 +110,51 @@ header { margin-bottom: 2.5rem; }
 
 .position-block { margin-bottom: 2rem; }
 
+.position-entry {
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.position-entry:last-child { border-bottom: 1px solid var(--border); }
+
+.position-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
 .position { font-size: 1rem; color: var(--text); }
+
+.position-years {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--text-faint);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.position-focus {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 0.15rem;
+}
+
+.groups {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+}
+
+.groups a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
+}
+
+.groups a:hover { border-bottom-color: var(--link); }
 
 .interests { margin-bottom: 2rem; }
 

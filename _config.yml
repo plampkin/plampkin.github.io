@@ -2,7 +2,7 @@
 #  Site settings — edit these to make the site yours
 # ----------------------------------------------------------------------
 title: Philip P. Lampkin
-tagline: Chemist making molecules and models to understand and design new materials.
+tagline: Making molecules and models to understand and design new materials.
 description:
 url: "https://philip-lampkin.me"
 baseurl: ""
@@ -21,12 +21,40 @@ links:
     url: "https://scholar.google.com/citations?user=h5jm0eEAAAAJ&hl=en"
   - label: github
     url: "https://github.com/plampkin"
+  - label: bluesky
+    url: "https://bsky.app/profile/philiplampkin.bsky.social"
+  - label: linkedin
+    url: "https://www.linkedin.com/in/philip-p-lampkin/"
 
 # Current position line
 position:
   title: ACS Arthur C. Cope and One-U Responsible AI Initiative Postdoctoral Fellow
-  research groups: Sigman, Sparks and Lessard Labs
   institution: University of Utah
+  focus: ""
+  groups:
+    - name: Sigman Lab
+      url: "https://www.sigmanlab.com"
+    - name: Sparks Lab
+      url: "https://my.eng.utah.edu/~sparks/group.html"
+    - name: Lessard Lab
+      url: "https://www.chemistry.utah.edu/lessard-research-group/"
+
+# Previous positions (graduate, undergraduate, etc.) — newest first
+previous_positions:
+  - title: Graduate Research Assistant
+    institution: ""
+    years: ""
+    focus: ""
+    groups:
+      - name: ""
+        url: ""
+  - title: Undergraduate Research Assistant
+    institution: ""
+    years: ""
+    focus: ""
+    groups:
+      - name: ""
+        url: ""
 
 
 # Research interests (the bordered list)
