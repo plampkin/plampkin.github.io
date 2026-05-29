@@ -18,7 +18,9 @@ layout: default
 <p class="bio">{{ site.bio }}</p>
 
 <div class="interests">
-  <p class="section-label">Research interests</p>
+  <div class="section-header">
+    <p class="section-label">Research interests</p>
+  </div>
   {% for item in site.interests %}
   <div class="interest-item">
     <span class="interest-title">{{ item.title }} — </span>
