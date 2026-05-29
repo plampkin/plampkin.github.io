@@ -231,10 +231,6 @@ header {
   padding: 0.85rem 0;
 }
 
-.pub-year + .pub-entry {
-  border-top: 1px solid var(--border);
-}
-
 .pub-title {
   font-size: 1rem;
   color: var(--text);
