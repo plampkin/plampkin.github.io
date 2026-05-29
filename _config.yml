@@ -38,7 +38,7 @@ links:
 #    - "https://www.linkedin.com/in/philip-p-lampkin/"
 #    - "https://orcid.org/0000-0002-6908-9619"
 
-bio: >
+bio: |
   I am a postdoctoral fellow engaged in research at the intersection of polymers, physical
   organic chemistry and data science. I curretly work on the design of highly strained
   monomers that endow materials with on-demand reactivity and development of strategies

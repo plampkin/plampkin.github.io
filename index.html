@@ -18,7 +18,7 @@ image:
   </div>
 </header>
 
-<p class="bio">{{ site.bio }}</p>
+<div class="bio">{{ site.bio | markdownify }}</div>
 
 <div class="interests">
   <div class="section-header">
@@ -158,21 +158,5 @@ image:
       {% endif %}
     </div>
     {% endfor %}
-
-    <div class="mentees-section">
-      <p class="mentees-label">Mentees</p>
-      {% for group in site.data.teaching.mentees %}
-      <p class="mentee-category">{{ group.category }}</p>
-      {% for person in group.people %}
-      <div class="mentee-item">
-        <div class="position-meta">
-          <span class="mentee-name">{{ person.name }}</span>
-          <span class="position-years">{{ person.years }}</span>
-        </div>
-        <p class="pub-venue">{{ person.current }}</p>
-      </div>
-      {% endfor %}
-      {% endfor %}
-    </div>
   </div>
 </div>
