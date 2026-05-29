@@ -30,13 +30,14 @@ links:
 
 # Bio paragraph (shown below the header links)
 bio: >
-  I'm a postdoctoral fellow engaged in research at the intersection of polymers, physical
+  I'm a postdoctoral scholar engaged in research at the intersection of polymers, physical
   organic chemistry and data science. I curretly work on discovery of highly strained
-  monomers that endow materials with on-demand reactivity and development of techniques
+  monomers that endow materials with on-demand reactivity and development of strategies
   for AI-guided optimization of frontal polymerizations. Previously, I created bifunctional
-  catalysts that mimic design elements found in enzymes, built open-source tools for
-  visible-light photochemistry, designed organic chemistry curricula that introduce
-  cutting-edge research to teaching labs and studied carbon tunneling using DFT.
+  catalysts that mimic design elements found in enzymes, built open-source reactors for
+  visible-light photochemistry, designed organic chemistry curricula that introduced
+  cutting-edge research to teaching labs and studied carbon tunneling in organic reactions
+  using DFT.
 
 # Teaching philosophy (shown in the Teaching Philosophy tab)
 #teaching_philosophy:
