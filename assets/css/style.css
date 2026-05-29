@@ -152,14 +152,14 @@ header {
 }
 
 .position-focus {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--text-muted);
   font-style: italic;
   margin-top: 0.15rem;
 }
 
 .groups {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--text-muted);
   margin-top: 0.3rem;
 }
@@ -177,14 +177,14 @@ header {
 
 .interest-item {
   padding: 0.5rem 0;
-  font-size: 0.97rem;
+  font-size: 1rem;
 }
 
 .interest-title { font-weight: 500; color: var(--text); }
 
 .interest-desc {
   color: var(--text-muted);
-  font-size: 0.93rem;
+  font-size: 1rem;
   font-style: italic;
   margin-top: 0.2rem;
 }
@@ -241,14 +241,14 @@ header {
 }
 
 .pub-venue {
-  font-size: 0.88rem;
+  font-size: 1rem;
   color: var(--text-muted);
   font-style: italic;
   margin-bottom: 0.25rem;
 }
 
 .pub-authors {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--text-faint);
   margin-bottom: 0.35rem;
 }
@@ -261,7 +261,7 @@ header {
 
 .pub-link {
   font-family: 'DM Mono', monospace;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: var(--link);
   text-decoration: none;
   border-bottom: 1px solid transparent;
