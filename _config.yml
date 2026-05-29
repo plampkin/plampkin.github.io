@@ -50,7 +50,7 @@ bio: >
 # Research interests (the bordered list)
 interests:
   - title: New Polymerizations and Functional Materials
-    desc: How do we design materials that exhibit the best of properties of biopolymers and synthetic polymers? How can we overcome the limitations of current polymers to address the plastic waste crisis?
+    desc: How can we overcome the limitations of current polymers to address the plastic waste crisis? How do we design materials that exhibit the best properties of biopolymers and synthetic polymers? 
   - title: Data Chemistry
     desc: How do we best leverage sparse chemistry data to guide experimental efforts? What AI/ML methods are most useful for chemists and how do we make them accessible to experimentalists?
   - title: Catalysis
@@ -77,7 +77,7 @@ previous_positions:
     category: graduate
     institution: "University of Wisconsin–Madison"
     years: "2019-2025"
-    focus: "Foldamer catalysis, Photochemistry and Chemistry Education"
+    focus: "Foldamer catalysis, Photochemistry and Chemistry Education."
     group:
       - name: "Gellman Lab"
         url: "https://gellman.chem.wisc.edu"
