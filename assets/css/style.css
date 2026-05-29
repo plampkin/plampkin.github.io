@@ -11,21 +11,6 @@
   --link: #2a5c45;
 }
 
-/* Night view disabled — values preserved for future use
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #e8e6de;
-    --text-muted: #a8a69e;
-    --text-faint: #6e6c65;
-    --bg: #18180f;
-    --border: rgba(255, 255, 255, 0.1);
-    --accent: #6aab88;
-    --accent-light: #1a2e22;
-    --link: #6aab88;
-  }
-}
-*/
-
 html { font-size: 17px; }
 
 body {
@@ -98,12 +83,6 @@ header {
 .links a:hover,
 .position a:hover { border-bottom-color: var(--link); }
 
-.divider {
-  border: none;
-  border-top: 1px solid var(--border);
-  margin: 2rem 0;
-}
-
 .bio {
   font-size: 1rem;
   color: var(--text);
@@ -126,8 +105,6 @@ header {
   padding-bottom: 0.5rem;
   margin-bottom: -1px;
 }
-
-.position-block { margin-bottom: 2rem; }
 
 .position-entry {
   padding: 0.6rem 0;
@@ -190,6 +167,8 @@ header {
   font-style: italic;
   margin-top: 0.2rem;
 }
+
+.tabs-group { margin-bottom: 2rem; }
 
 .tabs {
   display: flex;
@@ -271,18 +250,6 @@ header {
 }
 
 .pub-link:hover { border-bottom-color: var(--link); }
-
-.status-badge {
-  display: inline-block;
-  font-family: 'DM Mono', monospace;
-  font-size: 0.7rem;
-  background: var(--accent-light);
-  color: var(--accent);
-  padding: 1px 6px;
-  border-radius: 3px;
-  margin-left: 0.4rem;
-  vertical-align: middle;
-}
 
 footer {
   margin-top: 4rem;

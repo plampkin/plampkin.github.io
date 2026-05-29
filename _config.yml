@@ -7,9 +7,6 @@ description:
 url: "https://philip-lampkin.me"
 baseurl: ""
 
-# Path to your headshot (lives in /assets)
-headshot: /assets/headshot.jpg
-
 # Header links (shown as the small monospace row under your name).
 # Add, remove, or reorder freely.
 links:
@@ -38,15 +35,6 @@ bio: >
   visible-light photochemistry, created organic chemistry curricula that introduced
   cutting-edge research to teaching labs and studied carbon tunneling in organic reactions
   using DFT.
-
-# Teaching philosophy (shown in the Teaching Philosophy tab)
-#teaching_philosophy:
-#  - title: Mentorship
-#    desc: 
-#  - title: Collaboration
-#    desc: 
-#  - title: Diversity
-#    desc: Science is stronger when everyone is included and enjoys success.
 
 # Research interests (the bordered list)
 interests:
