@@ -271,7 +271,9 @@ footer {
 
 @media (max-width: 600px) {
   .page { padding: 2.5rem 1.25rem 4rem; }
-  header { flex-direction: column; align-items: flex-start; }
+  header { flex-direction: column; align-items: center; }
+  .header-text { align-items: center; text-align: center; }
+  .links { justify-content: center; }
   .name { font-size: 1.7rem; }
   .tab-btn { font-size: 0.88rem; letter-spacing: 0; margin-right: 0.75rem; }
 }
