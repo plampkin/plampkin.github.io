@@ -51,8 +51,8 @@ header {
 
 .headshot {
   flex-shrink: 0;
-  width: 175px;
-  height: 175px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -294,6 +294,7 @@ footer {
 
 @media (max-width: 600px) {
   .page { padding: 2.5rem 1.25rem 4rem; }
+  header { flex-direction: column; align-items: flex-start; }
   .name { font-size: 1.7rem; }
   .tab-btn { font-size: 0.88rem; letter-spacing: 0; margin-right: 0.75rem; }
 }
