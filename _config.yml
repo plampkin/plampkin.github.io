@@ -28,8 +28,8 @@ links:
 
 # Bio paragraph (shown below the header links)
 bio: >
-  I'm a chemist working at the meeting point of polymer science, physical organic chemistry
-  and data science. Previously, I developed bifunctional catalysts that mimic design elements
+  I'm a chemist working at the intersection of polymer science, physical organic chemistry
+  and data science. Previously, I created bifunctional catalysts that mimic design elements
   found in enzymes, built open-source tools for visible-light photochemistry, and designed 
   organic chemistry curricula bridging the gap between research and teaching labs.
 
@@ -45,11 +45,11 @@ bio: >
 # Research interests (the bordered list)
 interests:
   - title: New Polymerizations and Functional Materials
-    desc: Can we build materials with the best of properties of biopolymers and synthetic polymers? How do we overcome the limitations of current materials to address the plastic waste crisis?
+    desc: How do we design materials that exhibit the best of properties of biopolymers and synthetic polymers? How can we overcome the limitations of current polymers to address the plastic waste crisis?
   - title: Data Chemistry
-    desc: How can we best leverage sparse chemistry data to guide experimental efforts? What AI/ML methods are most useful for chemists and how do we make them accessible to experimentalists?
+    desc: How do we best leverage sparse chemistry data to guide experimental efforts? What AI/ML methods are most useful for chemists and how do we make them accessible to experimentalists?
   - title: Catalysis
-    desc: What's required to discover new catalysts that enable fundamentally new reactivity? How can we design catalysts that achieve selectivity through enhancing reactivity? What synthetic strategies haven't been examined and what catalysts might enable them?
+    desc: What is required to discover new catalysts that enable fundamentally new reactivity? How do we design catalysts that achieve selectivity through enhancing reactivity? What synthetic strategies haven't been examined and what catalysts might enable them?
 
 
 # Current position line
