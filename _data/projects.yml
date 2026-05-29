@@ -3,5 +3,5 @@
 - title: "Wisconsin Photoreactor Platform"
   desc: "An open-source architecture for low-cost, high-performance photoreactors for synthetic organic chemistry."
   links:
-    - label: github
+    - label: GitHub
       url: "https://github.com/uw-madison-chem-shops/wisconsin-photoreactor/"
