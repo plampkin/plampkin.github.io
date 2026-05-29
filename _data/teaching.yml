@@ -1,0 +1,42 @@
+roles:
+  - title: "Organic Chemistry Lecturer"
+    institution: "University of Wisconsin–Madison"
+    years: "2025"
+    bullets:
+      - "Led 2 sections of Organic Chemistry I (CHEM 343), with 6 × 1-hour lectures per week to ~500 undergraduates."
+
+  - title: "Curriculum Development Volunteer"
+    institution: "University of Wisconsin–Madison"
+    years: "2022–2025"
+    bullets:
+      - "Developed, implemented and taught 3 new Advanced Organic Chemistry Laboratory experiments focused on synthetic photocatalysis (4 semesters)."
+      - "Co-authored a J. Chem. Educ. report (ACS Editors' Choice) on a photosensitized alkene isomerization experiment."
+      - "Two further reports on metallaphotoredox and organic photocatalysis modules are in preparation."
+
+  - title: "Teaching Assistant"
+    institution: "University of Wisconsin–Madison"
+    years: "2019–2022"
+    bullets:
+      - "Led weekly Organic Chemistry Lab sections and pre-lab discussions (3 semesters)."
+      - "Taught biweekly discussion sections for Organic Chemistry I & II (3 semesters)."
+
+mentees:
+  - category: "Graduate"
+    people:
+      - name: "Theodore Gierszel"
+        years: "2023–2024"
+        current: "Chemistry Education PhD student (Stowe Group, UW–Madison)"
+      - name: "R. Charles Roberts"
+        years: "2024–2025"
+        current: "Organic Chemistry PhD student (Gellman Group, UW–Madison)"
+  - category: "Undergraduate"
+    people:
+      - name: "Angie Xu"
+        years: "2020–2022"
+        current: "Instructor (Teach for America)"
+      - name: "Riley F. Lehman"
+        years: "2022–2023"
+        current: "Organic Chemistry PhD student (UC San Diego)"
+      - name: "Bianca Czeslawski"
+        years: "2023–2024"
+        current: "Organic Chemistry PhD student (NYU)"

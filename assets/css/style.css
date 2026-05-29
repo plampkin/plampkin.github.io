@@ -251,6 +251,55 @@ header {
 
 .pub-link:hover { border-bottom-color: var(--link); }
 
+.teaching-entry { padding: 0.6rem 0; }
+
+.teaching-bullets {
+  list-style: none;
+  margin-top: 0.4rem;
+}
+
+.teaching-bullet {
+  font-size: 1rem;
+  color: var(--text-muted);
+  padding-left: 1.1em;
+  position: relative;
+  margin-bottom: 0.15rem;
+}
+
+.teaching-bullet::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--text-faint);
+}
+
+.mentees-section {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.mentees-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.88rem;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.5rem;
+}
+
+.mentee-category {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 0.75rem;
+  margin-bottom: 0.2rem;
+}
+
+.mentee-item { padding: 0.25rem 0; }
+
+.mentee-name { font-size: 1rem; color: var(--text); }
+
 footer {
   margin-top: 4rem;
   padding-top: 1.5rem;

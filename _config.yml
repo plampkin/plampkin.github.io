@@ -48,10 +48,15 @@ bio: >
   cutting-edge research to teaching labs and studied carbon tunneling in organic reactions
   using DFT.
 
+  I am fortunate to be supported by the American Chemical Society through the Arthur
+  C. Cope Postdoctoral Fellowship in Organic Chemistry. I am also a One-U Responsible
+  AI Initiative Postdoctoral Fellow, which has provided me with non-financial support
+  as I develop my research program at the intersection of AI and chemistry.
+
 # Research interests (the bordered list)
 interests:
   - title: New Polymerizations and Functional Materials
-    desc: Can we design polymers that match the performance of current plastics but have diverse end-of-life options and functionalities? 
+    desc: Can we design polymers that match the performance of current plastics but have diverse functionalities and end-of-life options? 
           How do we design materials that merge the best properties of biopolymers and synthetic polymers? 
   - title: Data Chemistry
     desc: How do we best leverage sparse data to guide experimental chemistry efforts?

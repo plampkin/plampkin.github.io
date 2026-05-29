@@ -102,6 +102,7 @@ image:
   <div class="tabs" role="tablist">
     <button class="tab-btn active" role="tab" aria-selected="true" onclick="switchTab('publications', this)">Publications</button>
     <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('open-source', this)">Projects</button>
+    <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('teaching', this)">Teaching</button>
   </div>
 
   <!-- Publications: grouped by year, newest first -->
@@ -137,5 +138,41 @@ image:
       {% endif %}
     </div>
     {% endfor %}
+  </div>
+
+  <!-- Teaching: roles then mentees -->
+  <div id="teaching" class="tab-panel">
+    {% for role in site.data.teaching.roles %}
+    <div class="teaching-entry">
+      <div class="position-meta">
+        <div>
+          <p class="position">{{ role.title }}</p>
+          <p class="position-institution">{{ role.institution }}</p>
+        </div>
+        <span class="position-years">{{ role.years }}</span>
+      </div>
+      {% if role.bullets %}
+      <ul class="teaching-bullets">
+        {% for bullet in role.bullets %}<li class="teaching-bullet">{{ bullet }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% endfor %}
+
+    <div class="mentees-section">
+      <p class="mentees-label">Mentees</p>
+      {% for group in site.data.teaching.mentees %}
+      <p class="mentee-category">{{ group.category }}</p>
+      {% for person in group.people %}
+      <div class="mentee-item">
+        <div class="position-meta">
+          <span class="mentee-name">{{ person.name }}</span>
+          <span class="position-years">{{ person.years }}</span>
+        </div>
+        <p class="pub-venue">{{ person.current }}</p>
+      </div>
+      {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </div>
