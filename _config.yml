@@ -1,9 +1,9 @@
 # ----------------------------------------------------------------------
 #  Site settings — edit these to make the site yours
 # ----------------------------------------------------------------------
-title: Philip P. Lampkin
-tagline: Making molecules and models to design and understand new materials.
-description:
+title: Philip Lampkin
+tagline: Making molecules and models to understand and design new materials.
+description: "Philip Lampkin is a postdoctoral fellow at the University of Utah working at the intersection of polymer science, physical organic chemistry, and AI-guided materials design."
 url: "https://philip-lampkin.me"
 baseurl: ""
 
@@ -26,8 +26,20 @@ links:
     url: "https://www.linkedin.com/in/philip-p-lampkin/"
 
 # Bio paragraph (shown below the header links)
+author:
+  name: Philip Lampkin
+
+social:
+  name: Philip Lampkin
+  links:
+    - "https://scholar.google.com/citations?user=h5jm0eEAAAAJ&hl=en"
+    - "https://github.com/plampkin"
+    - "https://bsky.app/profile/philiplampkin.bsky.social"
+    - "https://www.linkedin.com/in/philip-p-lampkin/"
+    - "https://orcid.org/0000-0002-6908-9619"
+
 bio: >
-  I'm a postdoctoral scholar engaged in research at the intersection of polymers, physical
+  I am a postdoctoral fellow engaged in research at the intersection of polymers, physical
   organic chemistry and data science. I curretly work on the design of highly strained
   monomers that endow materials with on-demand reactivity and development of strategies
   for AI-guided optimization of frontal polymerizations. Previously, I created bifunctional
@@ -85,6 +97,7 @@ previous_positions:
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Don't copy these into the built site
 exclude:
