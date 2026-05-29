@@ -151,11 +151,7 @@ image:
         </div>
         <span class="position-years">{{ role.years }}</span>
       </div>
-      {% if role.bullets %}
-      <ul class="teaching-bullets">
-        {% for bullet in role.bullets %}<li class="teaching-bullet">{{ bullet }}</li>{% endfor %}
-      </ul>
-      {% endif %}
+      {% if role.desc %}<p class="teaching-bullet">{{ role.desc }}</p>{% endif %}
     </div>
     {% endfor %}
   </div>

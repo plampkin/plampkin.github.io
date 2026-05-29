@@ -253,15 +253,7 @@ header {
 
 .pub-link:hover { border-bottom-color: var(--link); }
 
-.teaching-entry {
-  padding: 0.6rem 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.teaching-bullets {
-  list-style: none;
-  margin-top: 0.4rem;
-}
+.teaching-entry { padding: 0.6rem 0; }
 
 .teaching-bullet {
   font-size: 1rem;

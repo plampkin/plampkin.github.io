@@ -2,20 +2,14 @@ roles:
   - title: "Organic Chemistry Lecturer"
     institution: "University of Wisconsin–Madison"
     years: "2025"
-    bullets:
-      - "Led 2 sections of Organic Chemistry I (CHEM 343), with 6 × 1-hour lectures per week to ~500 undergraduates."
+    desc: "Taught 2 sections of Organic Chemistry I, delivering 6 × 1-hour lectures per week to ~500 undergraduates."
 
   - title: "Curriculum Development Volunteer"
     institution: "University of Wisconsin–Madison"
     years: "2022–2025"
-    bullets:
-      - "Developed, implemented and taught 3 new Advanced Organic Chemistry Laboratory experiments focused on synthetic photocatalysis (4 semesters)."
-      - "Co-authored a J. Chem. Educ. report (ACS Editors' Choice) on a photosensitized alkene isomerization experiment."
-      - "Two further reports on metallaphotoredox and organic photocatalysis modules are in preparation."
+    desc: "Developed, implemented and taught 3 new Advanced Organic Chemistry Laboratory experiments focused on synthetic photocatalysis (4 semesters)."
 
   - title: "Teaching Assistant"
     institution: "University of Wisconsin–Madison"
     years: "2019–2022"
-    bullets:
-      - "Led weekly Organic Chemistry Lab sections and pre-lab discussions (3 semesters)."
-      - "Taught biweekly discussion sections for Organic Chemistry I & II (3 semesters)."
+    desc: "Led weekly Organic Chemistry I & II Lab and discussion sections (6 semesters)."
