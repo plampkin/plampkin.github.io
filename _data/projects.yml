@@ -1,7 +1,7 @@
 # Open-source software & hardware. Each entry: title, desc, optional links.
 
 - title: "Wisconsin Photoreactor Platform"
-  desc: "An open-source architecture for low-cost, high-performance photoreactors for synthetic organic chemistry."
+  desc: "An open-source architecture for low-cost, high-performance photoreactors for synthetic organic chemistry. The reactors are modular, can be produced for under 200 USD and are compatible with a wide range of commercial LEDs."
   links:
     - label: GitHub
       url: "https://github.com/uw-madison-chem-shops/wisconsin-photoreactor/"
