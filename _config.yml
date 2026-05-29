@@ -45,11 +45,11 @@ bio: >
 # Research interests (the bordered list)
 interests:
   - title: New Polymerizations and Functional Materials
-    desc: Can we bridge the gap between biopolymers and synthetic polymers? How can we overcome the limitations of current materials to address the plastic waste crisis?
+    desc: Can we build materials with the best of properties of biopolymers and synthetic polymers? How do we overcome the limitations of current materials to address the plastic waste crisis?
   - title: Data Chemistry
-    desc: How do we best leverage sparse chemistry data to guide experimental efforts? What AI/ML methods are most useful for chemists and how do we make them accessible to experimentalists?
+    desc: How can we best leverage sparse chemistry data to guide experimental efforts? What AI/ML methods are most useful for chemists and how do we make them accessible to experimentalists?
   - title: Catalysis
-    desc: What is required to discover new catalysts that enable fundamentally new reactivity? How can we design catalysts that achieve selectivity through enhancing reactivity? What synthetic strategies haven't been examined and what catalysts might enable them?
+    desc: What's required to discover new catalysts that enable fundamentally new reactivity? How can we design catalysts that achieve selectivity through enhancing reactivity? What synthetic strategies haven't been examined and what catalysts might enable them?
 
 
 # Current position line
@@ -57,7 +57,7 @@ position:
   title: ACS Arthur C. Cope and One-U Responsible AI Initiative Fellow
   institution: University of Utah
   years: "2026-present"
-  focus: "AI-accelerated polymer design and synthesis"
+  focus: "AI-guided polymer design and synthesis."
   groups:
     - name: Sigman Lab
       url: "https://www.sigmanlab.com"
@@ -72,7 +72,7 @@ previous_positions:
     category: graduate
     institution: "University of Wisconsin–Madison"
     years: "2019-2025"
-    focus: "Foldamer Catalysis"
+    focus: "Foldamer catalysis, Photochemistry and Chemistry Education"
     group:
       - name: "Gellman Lab"
         url: "https://gellman.chem.wisc.edu"
@@ -80,7 +80,7 @@ previous_positions:
     category: undergraduate
     institution: "University of San Francisco"
     years: "2017-2019"
-    focus: "Heavy atom tunneling in organic reactions"
+    focus: "Computational studies of heavy atom tunneling in organic reactions."
     group:
       - name: "Castro/Karney Lab"
         url: "https://www.cs.usfca.edu/~karney/"
