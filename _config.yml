@@ -13,19 +13,19 @@ headshot: /assets/headshot.jpg
 # Header links (shown as the small monospace row under your name).
 # Add, remove, or reorder freely.
 links:
-  - label: email
+  - label: Email
     url: "mailto:philip.lampkin@utah.edu"
-  - label: cv
+  - label: CV
     url: "/assets/cv.pdf"
   - label: ORCiD  
     url: "https://orcid.org/0000-0002-6908-9619"
-  - label: google scholar
+  - label: Google Scholar
     url: "https://scholar.google.com/citations?user=h5jm0eEAAAAJ&hl=en"
-  - label: github
+  - label: GitHub
     url: "https://github.com/plampkin"
-  - label: bluesky
+  - label: Bluesky
     url: "https://bsky.app/profile/philiplampkin.bsky.social"
-  - label: linkedin
+  - label: LinkedIn
     url: "https://www.linkedin.com/in/philip-p-lampkin/"
 
 # Bio paragraph (shown below the header links)
