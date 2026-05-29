@@ -17,6 +17,8 @@ links:
     url: "mailto:philip.lampkin@utah.edu"
   - label: cv
     url: "/assets/cv.pdf"
+  - label: ORCiD  
+    url: "https://orcid.org/0000-0002-6908-9619"
   - label: google scholar
     url: "https://scholar.google.com/citations?user=h5jm0eEAAAAJ&hl=en"
   - label: github
@@ -28,10 +30,10 @@ links:
 
 # Bio paragraph (shown below the header links)
 bio: >
-  I'm a postdoctoral fellow working at the intersection of polymers, physical organic
-  chemistry and data science. I curretly work on discovery of highly strained monomers
-  that endow materials with on-demand reactivity and development of techniques for 
-  AI-guided optimization of frontal polymerizations. Previously, I created bifunctional
+  I'm a postdoctoral fellow engaged in research at the intersection of polymers, physical
+  organic chemistry and data science. I curretly work on discovery of highly strained
+  monomers that endow materials with on-demand reactivity and development of techniques
+  for AI-guided optimization of frontal polymerizations. Previously, I created bifunctional
   catalysts that mimic design elements found in enzymes, built open-source tools for
   visible-light photochemistry, designed organic chemistry curricula that introduce
   cutting-edge research to teaching labs and studied carbon tunneling using DFT.

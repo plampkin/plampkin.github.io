@@ -23,7 +23,7 @@ layout: default
   </div>
   {% for item in site.interests %}
   <div class="interest-item">
-    <span class="interest-title">{{ item.title }} — </span>
+    <span class="interest-title">{{ item.title }}</span>
     {% assign questions = item.desc | split: "? " %}{% for q in questions %}<p class="interest-desc">{{ q }}{% unless forloop.last %}?{% endunless %}</p>{% endfor %}
   </div>
   {% endfor %}
@@ -94,8 +94,6 @@ layout: default
     {% endfor %}
   </div>
 </div>
-
-<hr class="divider">
 
 <div class="tabs-group">
   <div class="tabs" role="tablist">

@@ -285,7 +285,6 @@ header {
 footer {
   margin-top: 4rem;
   padding-top: 1.5rem;
-  border-top: 1px solid var(--border);
   font-family: 'DM Mono', monospace;
   font-size: 0.75rem;
   color: var(--text-faint);
@@ -294,5 +293,5 @@ footer {
 @media (max-width: 600px) {
   .page { padding: 2.5rem 1.25rem 4rem; }
   .name { font-size: 1.7rem; }
-  .tab-btn { font-size: 0.9rem; letter-spacing: 0.05em; margin-right: 1rem; }
+  .tab-btn { font-size: 0.88rem; letter-spacing: 0; margin-right: 0.75rem; }
 }
