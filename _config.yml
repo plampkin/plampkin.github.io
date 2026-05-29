@@ -25,19 +25,6 @@ links:
   - label: LinkedIn
     url: "https://www.linkedin.com/in/philip-p-lampkin/"
 
-# Bio paragraph (shown below the header links)
-#author:
-#  name: Philip Lampkin
-
-#social:
-#  name: Philip Lampkin
-#  links:
-#    - "https://scholar.google.com/citations?user=h5jm0eEAAAAJ&hl=en"
-#    - "https://github.com/plampkin"
-#    - "https://bsky.app/profile/philiplampkin.bsky.social"
-#    - "https://www.linkedin.com/in/philip-p-lampkin/"
-#    - "https://orcid.org/0000-0002-6908-9619"
-
 bio: |
   I am a postdoctoral fellow engaged in research at the intersection of polymers, physical
   organic chemistry and data science. I curretly work on the design of highly strained
