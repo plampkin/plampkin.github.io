@@ -1,3 +1,103 @@
+# ----------------------------------------------------------------------
+#  Site settings — edit these to make the site yours
+# ----------------------------------------------------------------------
 title: Philip Lampkin
 tagline: Making molecules and models to understand and design new materials.
 description: "Philip Lampkin is a postdoctoral fellow at the University of Utah working at the intersection of polymers, organic chemistry, and AI."
+url: "https://philip-lampkin.me"
+baseurl: ""
+
+# Header links (shown as the small monospace row under your name).
+# Add, remove, or reorder freely.
+links:
+  - label: Email
+    url: "mailto:philip.lampkin@utah.edu"
+  - label: CV
+    url: "/assets/cv.pdf"
+  - label: ORCiD  
+    url: "https://orcid.org/0000-0002-6908-9619"
+  - label: Google Scholar
+    url: "https://scholar.google.com/citations?user=h5jm0eEAAAAJ&hl=en"
+  - label: GitHub
+    url: "https://github.com/plampkin"
+  - label: Bluesky
+    url: "https://bsky.app/profile/philiplampkin.bsky.social"
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/philip-p-lampkin/"
+
+bio: |
+  I am a postdoctoral fellow engaged in research at the intersection of polymers, physical
+  organic chemistry and data science. I currently work on the design of highly strained
+  monomers that endow materials with on-demand reactivity and development of strategies
+  for AI-guided optimization of frontal polymerizations. Previously, I created bifunctional
+  catalysts that mimic design elements found in enzymes, built open-source reactors for
+  visible-light photochemistry, created organic chemistry curricula that introduced
+  cutting-edge research to teaching labs and studied carbon tunneling in organic reactions
+  using DFT.
+
+  My research is supported by the American Chemical Society through the Arthur
+  C. Cope Postdoctoral Fellowship in Organic Chemistry. I am also a recipient of the 
+  One-U Responsible AI Initiative Postdoctoral Fellowship, which has provided me
+  with non-financial support as I develop my research program in AI and chemistry.
+
+# Research interests (the bordered list)
+interests:
+  - title: New Polymerizations and Functional Materials
+    desc: Can we design polymers that match the performance of current plastics but have diverse functionalities and end-of-life options? 
+          How do we design materials that merge the best properties of biopolymers and synthetic polymers? 
+  - title: Data Chemistry
+    desc: How do we best leverage sparse data to guide experimental chemistry efforts?
+          Which AI/ML methods actually help chemists and how do we make them accessible to experimentalists?
+  - title: Catalysis
+    desc: What is required to discover catalysts that unlock fundamentally new reactivity?
+          How do we achieve selectivity by enhancing reactivity rather than suppressing it?
+          Which synthetic strategies remain out of reach, why haven't they been examined, and what catalysts might make them possible?
+
+
+# Current position line
+position:
+  title: ACS Arthur C. Cope and One-U Responsible AI Initiative Fellow
+  institution: University of Utah
+  years: "2026-present"
+  focus: "AI-guided polymer design and synthesis."
+  groups:
+    - name: Sigman Lab
+      url: "https://www.sigmanlab.com"
+    - name: Sparks Lab
+      url: "https://my.eng.utah.edu/~sparks/group.html"
+    - name: Lessard Lab
+      url: "https://www.chemistry.utah.edu/lessard-research-group/"
+
+# Previous positions (graduate, undergraduate, etc.) — newest first
+previous_positions:
+  - title: Graduate Researcher
+    category: graduate
+    institution: "University of Wisconsin–Madison"
+    years: "2019-2025"
+    focus: "Foldamer catalysis, Photochemistry and Chemistry Education."
+    group:
+      - name: "Gellman Lab"
+        url: "https://gellman.chem.wisc.edu"
+  - title: Undergraduate Researcher
+    category: undergraduate
+    institution: "University of San Francisco"
+    years: "2017-2019"
+    focus: "Computational studies of heavy atom tunneling in organic reactions."
+    group:
+      - name: "Castro/Karney Lab"
+        url: "https://www.cs.usfca.edu/~karney/"
+
+# ----------------------------------------------------------------------
+#  Build settings — you usually don't need to touch these
+# ----------------------------------------------------------------------
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Don't copy these into the built site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
