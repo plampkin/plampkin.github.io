@@ -2,7 +2,6 @@
 
 A simple personal site built with [Jekyll](https://jekyllrb.com).
 
-<<<<<<< HEAD
 ## What lives where
 
 | File | What it controls |
@@ -14,13 +13,3 @@ A simple personal site built with [Jekyll](https://jekyllrb.com).
 | `_layouts/default.html` | Page shell (head, fonts, footer, tab-switching script) |
 | `index.html` | Page layout |
 | `CNAME` | Custom domain (`philip-lampkin.me`) |
-=======
-Grad student things:
-
-1. personal abstract
-2. recent publications
-3. projects
-4. youtube/linkedin/social links
-5. contact info
-6. CV pdf
->>>>>>> edc9835cb5cc3f81ee3adf3cecbbeaf1003d00c1
