@@ -64,6 +64,12 @@
       btn.classList.add('active');
       btn.setAttribute('aria-selected', 'true');
     }
+
+    // Unmask obfuscated email links (e.g. "name[at]domain") at click time.
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[href^="mailto:"]');
+      if (a) a.href = a.getAttribute('href').replace('[at]', '@');
+    });
   </script>
 </body>
 </html>

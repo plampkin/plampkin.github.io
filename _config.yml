@@ -11,7 +11,9 @@ baseurl: ""
 # Add, remove, or reorder freely.
 links:
   - label: Email
-    url: "mailto:philip.lampkin@utah.edu"
+    # Masked to deter scrapers; a script in _layouts/default.html swaps
+    # "[at]" for "@" when the link is clicked, so it still works for visitors.
+    url: "mailto:philip.lampkin[at]utah.edu"
   - label: CV
     url: "/assets/cv.pdf"
   - label: ORCiD  
