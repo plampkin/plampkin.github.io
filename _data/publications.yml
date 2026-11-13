@@ -2,6 +2,14 @@
 # <strong> so it stands out in each author list. Add a new paper by copying
 # a block and editing the fields.
 
+- year: 2026
+  title: "Bifunctional Catalysis of a Crossed Aldol Condensation by Diamines: Impact of Tether Composition and Length"
+  venue: "The Journal of Organic Chemistry <strong>2026</strong>, 91, 24, 8312–8321"
+  authors: "<strong>P. P. Lampkin</strong>, R. C. Roberts, B. Czeslawski, S. H. Gellman"
+  links:
+    - label: Article
+      url: "https://doi.org/10.1021/acs.joc.6c00659"
+
 - year: 2025
   title: "Bifunctional Catalysis of Aldol Reactions by Foldamer Dihydrazides: Assessment of Conformational Preorganization"
   venue: "Journal of the American Chemical Society <strong>2025</strong>, 147, 37, 33932-33943"
